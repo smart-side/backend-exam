@@ -40,9 +40,12 @@ class AppController extends Controller
     public function initialize()
     {
         parent::initialize();
-
         $this->loadComponent('RequestHandler');
+
+        $this->request->session()->start();
+        
         $this->loadComponent('Flash');
+        
     }
 
     /**
@@ -53,6 +56,7 @@ class AppController extends Controller
      */
     public function beforeRender(Event $event)
     {
+        $this->log(__METHOD__);
         if (!array_key_exists('_serialize', $this->viewVars) &&
             in_array($this->response->type(), ['application/json', 'application/xml'])
         ) {
