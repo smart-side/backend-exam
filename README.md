@@ -30,8 +30,8 @@ O projeto deverá conter as seguintes telas / funções:
 - A cada commit, colocar um descritivo objetivo (em inglês) da funcionalidade concluída / ajustada.
 
 ###Diferencial
-- Utilização de algum design pattern;
-- Utilizar code first na criação do banco de dados (migrations);
+- [x] Utilização de algum design pattern;
+- [x] Utilizar code first na criação do banco de dados (migrations);
 - Utilizar pré processador CSS;
 - Utilizar automatizadores de processo (Gulp, Grunt);
 - Caso o framework escolhido seja o laravel, utilização do homestead;
