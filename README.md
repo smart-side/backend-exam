@@ -6,19 +6,19 @@
 ##Criar um CRUD
 O projeto deverá conter as seguintes telas / funções:
 
-- [x] Login (pode ser com um usuário gerado previamente);
-- [x] Cadastro de produto com os segiuntes dados:
-    - [ ]Foto do produto (com upload de imagem);
-    - [x]Nome do produto;
-    - [x]Descrição
-    - [ ]Categoria(s) (Games, Eletrodomésticos, Cama, etc);
-        - [ ]O mesmo produto pode ter mais de uma categoria
-- [x] Visualização do produto;
-- [x] Edição dos dados do produto;
-- [x] Exclusão do produto;
-- [x] Botão de logout.
+* [x] Login (pode ser com um usuário gerado previamente);
+* [x] Cadastro de produto com os segiuntes dados:
+  * [ ] Foto do produto (com upload de imagem);
+  * [x] Nome do produto;
+  * [x] Descrição
+  * [ ] Categoria(s) (Games, Eletrodomésticos, Cama, etc);
+    * [ ]O mesmo produto pode ter mais de uma categoria
+* [x] Visualização do produto;
+* [x] Edição dos dados do produto;
+* [x] Exclusão do produto;
+* [x] Botão de logout.
 
-*OBS.: As categorias devem vir do banco de dados, e serem dinâmicas, ou seja, caso adicione algum registro no BD, ele deverá aparecer para a seleção no próximo acesso à página.
+> OBS.: As categorias devem vir do banco de dados, e serem dinâmicas, ou seja, caso adicione algum registro no BD, ele deverá aparecer para a seleção no próximo acesso à página.
 
 ###Requisitos
 - [x] Utilizar API (todas as requisições devem ser vinculadas à essa API);
