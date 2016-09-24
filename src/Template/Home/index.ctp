@@ -1,3 +1,6 @@
+<?php
+$this->Html->script('App/Dashboard', ['block' => 'scriptBottom']);
+?>
 <!--body wrapper start-->
 <div class="wrapper">
     <!--state overview start-->

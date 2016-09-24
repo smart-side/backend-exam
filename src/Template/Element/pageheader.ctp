@@ -1,9 +1,11 @@
 <!-- page head start-->
 <div class="page-head">
     <h3>
-        Dashboard
+        <?= $module_name; ?>
     </h3>
-    <span class="sub-title">Welcome to SlickLab dashboard</span>
+    <span class="sub-title">
+        &nbsp;
+    </span>
     <div class="state-information">
         <div class="state-graph">
             <div id="balance" class="chart"></div>

@@ -75,6 +75,15 @@ Router::scope('/', function (RouteBuilder $routes) {
     $routes->fallbacks('DashedRoute');
 });
 
+Router::scope('/api/', function ($routes) {
+    $routes->extensions(['json']);
+    $routes->resources('Productsapi',[
+            'actions' => ['update' => 'put', 'create' => 'add']
+    ]);
+});
+
+
+
 /**
  * Load all plugin routes.  See the Plugin documentation on
  * how to customize the loading of plugin routes.

@@ -45,8 +45,8 @@
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
-        <script src="js/html5shiv.js"></script>
-        <script src="js/respond.min.js"></script>
+        <script src="/js/html5shiv.js"></script>
+        <script src="/js/respond.min.js"></script>
         <![endif]-->
 
     </head>
@@ -75,6 +75,7 @@
             <?= $this->element('sidebarright'); ?>
         </section>
 
+        <?= $this->fetch('cssBottom') ?>
 
 
         <!-- Placed js at the end of the document so the pages load faster -->
@@ -152,34 +153,11 @@
 
         <!--common scripts for all pages-->
         <?= $this->Html->script('scripts.js') ?>
+            
+        <?= $this->Html->script('underscore-min.js') ?>
+        <?= $this->Html->script('backbone-min.js') ?>
         
         <?= $this->fetch('scriptBottom') ?>
-
-        <script type="text/javascript">
-
-            $(document).ready(function () {
-
-                //countTo
-
-                $('.timer').countTo();
-
-                //owl carousel
-
-                $("#news-feed").owlCarousel({
-                    navigation: true,
-                    slideSpeed: 300,
-                    paginationSpeed: 400,
-                    singleItem: true,
-                    autoPlay: true
-                });
-            });
-
-            $(window).on("resize", function () {
-                var owl = $("#news-feed").data("owlCarousel");
-                owl.reinit();
-            });
-
-        </script>
 
     </body>
 </html>

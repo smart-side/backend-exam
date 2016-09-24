@@ -21,6 +21,8 @@ use Cake\View\Exception\MissingTemplateException;
 
 class HomeController extends AppController
 {
+    protected $module_name = 'Dashboard';
+    
     public function index()
     {
         //echo  '<pre>'. print_r(__METHOD__,1). '</pre>';
